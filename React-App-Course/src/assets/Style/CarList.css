@@ -1,0 +1,31 @@
+
+.container-title{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(20rem,100%), 1fr));
+  grid-gap: 16px;
+  list-style: none;
+  
+}
+
+.car-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  white-space: nowrap;
+  width: 100%; /* Assurez-vous que chaque élément occupe la largeur complète de sa colonne */
+  border: 1px solid #1f95b2fa; /* Ajoutez une bordure pour mieux visualiser les éléments */
+  border-radius: 10px;
+  padding: 16px; /* Ajoutez un remplissage pour l'espace intérieur de chaque élément */
+  box-sizing: border-box; /* Assurez-vous que le remplissage ne s'ajoute pas à la largeur */
+}
+

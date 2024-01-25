@@ -1,0 +1,187 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0 33px ;
+    position: sticky;
+    top: 0;
+  z-index: 999;
+}
+
+.header img{
+    width: 13%;
+    height: 115px;
+}
+
+.nav-bar{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 10px 30px 0 0;
+}
+
+.nav-bar li {
+    position: relative;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #25d0f7;
+    font-size: 22px;
+    position: relative;
+}
+
+/* Styling pour l'effet futuriste */
+.nav-bar a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-bar a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Autres effets stylisés */
+.nav-bar a:hover {
+    color: #f26f29; /* Change la couleur du texte au survol */
+}
+
+.nav-bar a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background-color: #f26f29;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-bar a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.title-container p{
+    display: flex;
+    justify-content: center;
+}
+
+.styled{
+    color: #25d0f7;
+    text-transform: uppercase;
+}
+
+
+.title-container button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 200px;
+}
+
+.submit-btn{
+    background-color: #e45948;
+    color: #25d0f7;
+    border: 1px solid #3b2247 ;
+    border-radius: 5px;
+    
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 200px;
+    background-color: #e45948;
+    color: #25d0f7;
+    border: 1px solid #3b2247 ;
+    border-radius: 5px;
+}
+
+.focus-in-contract-bck {
+	-webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+
+@-webkit-keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+
+  .animate-character{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #d5faf9 0%,
+    #d23e42 29%,
+    #d23e42 67%,
+    #d5faf9 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+  
