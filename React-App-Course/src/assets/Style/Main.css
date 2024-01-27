@@ -1,7 +1,7 @@
 body {
   margin: 0; /* Supprimer les marges par défaut du corps de la page */
   padding: 0; /* Supprimer le rembourrage par défaut du corps de la page */
-    max-width: 1920px;
+    width: 100%;
     background-image: url('../public/images/wallpaper.jpg');
     image-rendering: auto;
     background-size: contain;
